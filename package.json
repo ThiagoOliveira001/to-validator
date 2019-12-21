@@ -1,0 +1,29 @@
+{
+  "name": "to-validator",
+  "version": "1.0.0",
+  "description": "Javascript object validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoOliveira001/to-validator.git"
+  },
+  "keywords": [
+    "Validator",
+    "validate",
+    "object",
+    "scope"
+  ],
+  "author": "Thiago Silva de Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThiagoOliveira001/to-validator/issues"
+  },
+  "homepage": "https://github.com/ThiagoOliveira001/to-validator#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2"
+  }
+}
