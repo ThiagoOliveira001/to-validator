@@ -24,6 +24,24 @@ describe("CPF validator ", function() {
 
       result.should.equal(true);
     });
+
+    it("Should send the value 06783780023 and receive true", function() {
+      let result = isCpf(6783780023);
+
+      result.should.equal(true);
+    });
+
+    it("Should send the value null and receive true", function() {
+      let result = isCpf(null);
+
+      result.should.equal(true);
+    });
+
+    it("Should send the value undefined and receive true", function() {
+      let result = isCpf(undefined);
+
+      result.should.equal(true);
+    });
   });
 
   describe("When using a invalid value", function() {
@@ -41,6 +59,24 @@ describe("CPF validator ", function() {
 
     it("Should send the value 78187265009 and receive false", function() {
       let result = isCpf("78187265009");
+
+      result.should.equal(false);
+    });
+
+    it("Should send the value '' and receive false", function() {
+      let result = isCpf("");
+
+      result.should.equal(false);
+    });
+
+    it("Should send the value NaN and receive false", function() {
+      let result = isCpf(NaN);
+
+      result.should.equal(false);
+    });
+
+    it("Should send the value 0 and receive false", function() {
+      let result = isCpf(0);
 
       result.should.equal(false);
     });
